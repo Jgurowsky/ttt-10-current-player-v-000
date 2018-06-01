@@ -9,14 +9,17 @@ def turn_count(board)
 end
 
 
-def current_player(board) 
+def current_player(board)
   turn_count(board).even? ? "X" : "O"
 end
 
-#def current_player(board)
-  #if turn_count(board).even?
-    #"X"
-  #else
-    #"O"
-  #end
-#end
+
+=begin
+def current_player(board)
+  if turn_count(board).even?
+    "X"
+  else
+    "O"
+  end
+end
+=end
